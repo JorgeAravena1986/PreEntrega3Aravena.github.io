@@ -1,0 +1,15 @@
+//import
+@import 'base/vars';
+@import 'base/reset';
+
+//import layout
+@import 'layout/index';
+@import 'layout/categorias';
+@import 'layout/Contacto';
+@import 'layout/fechas';
+@import 'layout/galeria';
+
+//import components
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/fondo';

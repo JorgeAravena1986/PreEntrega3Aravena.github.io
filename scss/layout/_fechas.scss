@@ -1,0 +1,89 @@
+.contenedor {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.fechas {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+}
+
+.fechas td:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fechas caption {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 8px 0px;
+}
+
+.fechas tr {
+    background-color: yellow;
+    border: 1px black;
+}
+
+.fechas th,
+.fechas td {
+    font-size: 16px;
+    padding: 8px;
+    text-align: center;
+}
+
+.fechas thead th {
+    text-transform: uppercase;
+    background-color: #ddd;
+}
+
+.fechas tr:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.fechas tbody td:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+    .fechas {
+        border: 0px;
+    }
+
+    .fechas caption {
+        font-size: 22px;
+    }
+
+    .fechas thead {
+        display: none;
+    }
+
+    .fechas tr {
+        margin-bottom: 8px;
+        border-bottom: 4px solid #ddd;
+        display: block;
+    }
+    .fechas th,
+    .fechas td {
+        font-size: 12px;
+    }
+    .fechas td {
+        display: block;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+
+    }
+    .fechas td:last-child {
+        border-bottom: 0px;
+    }
+    .fechas td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        float: left;
+    }
+}
